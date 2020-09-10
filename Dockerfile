@@ -14,7 +14,7 @@ RUN apt-get update \
 && rm -r jenkins.war \
 && wget http://mirrors.jenkins.io/war/latest/jenkins.war \
 && rm -rf /tmp/Python-3.7.1 \
-&& apt-get --purge remove make \
+&& apt-get autoremove make \
 && apt-get autoclean \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
